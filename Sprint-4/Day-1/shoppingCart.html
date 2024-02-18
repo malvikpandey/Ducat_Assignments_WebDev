@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+<body style="background-color: yellow;">
+    <h1 style="text-align: center; color: blueviolet;">
+        <u>Welcome To Shopping Cart</u>
+    </h1>
+
+    <hr>
+
+    <div style="margin-top: 40px;">
+
+        <div style="
+        display: inline-block;
+        width: 400px;
+        height: 600px;
+        /*border: 2px solid white;*/
+        border:none;
+        margin: 0px 45px;
+        background-color: wheat;
+        ">
+
+            <img src="data:image/jpeg;base64,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" alt="bottle" height="65%" width="100%">
+            <h4 style="padding: 0px 6px; color: gray; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Fashion Tips</h4>
+            <h2 style="padding: 0px 6px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: 23px;">What Curling Iron Are The Best One</h2>
+            <p style="padding: 0px 6px; color: gray; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                Consectetur adipiscing elit, Laborum fuga incident dulce lenimen
+            </p>
+            <a href="" style="padding: 0px 6px; color:black; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                <u>Read More</u>
+            </a>
+
+
+
+        </div>
+
+        <div style="
+        display: inline-block;
+        width: 400px;
+        height: 600px;
+        /*border: 2px solid white;*/
+        border:none;
+        margin: 0px 45px;
+        background-color: wheat;
+        ">
+
+            <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/sites/2036/images/eFABrodMQjmLI6Nbtfkm_file.jpg" alt="soes" height="65%" width="100%">
+            <h4 style="padding: 0px 6px; color: gray; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Fashion Tips</h4>
+            <h2 style="padding: 0px 6px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 23px;">Vogue's Ultimate Guide To Shoes</h2>
+            <p style=" padding: 0px 6px; color: gray; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                Consectetur adipiscing elit, Laborum fuga incident dulce lenimen
+            </p>
+            <a href="" style="padding: 0px 6px; color:black; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                <u>Read More</u>
+            </a>
+
+
+
+        </div>
+
+        <div style="
+        display: inline-block;
+        width: 400px;
+        height: 600px;
+        /*border: 2px solid white;*/
+        border:none;
+        margin: 0px 45px;
+        background-color: wheat;
+        ">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSppxTllBYHkE1XZ49SM57jZ0CJfRVZDdPmBQndWbH-az1hyJzFw4BSTbBdeDL4VRy86Mc&usqp=CAU" alt="bottle" height="65%" width="100%">
+            <h4 style="padding: 0px 6px; color: gray; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Fashion Tips</h4>
+            <h2 style="padding: 0px 6px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 23px;">What Curling Iron Are The Best One</h2>
+            <p style="padding: 0px 6px; color: gray; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                Consectetur adipiscing elit, Laborum fuga incident dulce lenimen
+            </p>
+            <a href="" style="padding: 0px 6px; color:black; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                <u>Read More</u>
+            </a>
+
+
+
+        </div>
+    </div>
+</body>
+</html>
