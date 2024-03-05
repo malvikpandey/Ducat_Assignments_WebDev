@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IW Problem</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&display=swap');
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #nav-bar{
+            padding: 3px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(12, 34, 67);
+        }
+
+        #hgc{
+            padding: 0px 10px;
+            width: 30%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #hgc>a{
+            font-size: 18px;
+            font-weight: 400;
+            font-family: "Besley", serif;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        #hgc>a:hover{
+            padding: 5px;
+            border-radius: 5px;
+            background-color: yellow;
+            color: red;
+            cursor: pointer;
+        }
+
+        #nav-bar>div{
+            padding: 5px;
+        }
+
+        #nav-bar>div img{
+            height: 60%;
+            width: 60%;
+        }
+
+        #main-box{
+            padding: 10px;
+        }
+
+        #main-box h1{
+            color: rgb(137, 8, 163);
+            font-size: 55px;
+            font-family: "Besley", serif;
+            text-align: center;
+            text-decoration: underline;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #row-1{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            align-items: center;
+            margin: 5px 0px;
+            padding: 5px;
+        }
+
+        #row-1 div>img{
+            border-radius: 15px;
+            height: 250px;
+            width: 280px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav-bar">
+        <div>
+            <img src="https://www.ducatindia.com/static/images/logo.png" alt="">
+        </div>
+        <div id="hgc">
+            <a href="#">Home</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div id="main-box">
+        <h1>
+            Photo Gallery
+        </h1>
+        <div id="row-1">
+            <div>
+                <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt="">
+            </div>
+            <div>
+                <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt="">
+            </div>
+            <div>
+                <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt="">
+            </div>
+        </div>
+        <div id="row-1">
+            <div>
+                <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt="">
+            </div>
+            <div>
+                <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt="">
+            </div>
+            <div>
+                <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

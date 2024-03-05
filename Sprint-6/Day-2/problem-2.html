@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Lab</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #nav-bar{
+            background-color: hsl(0deg 0% 100%);
+            padding: 0px 55px;
+            display:flex;
+            justify-content: space-between;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        }
+
+        #nav-bar>div{
+            padding: 15px 15px;
+        }
+
+        #nav-bar>div:first-child{
+            background: linear-gradient(135deg,#ce4be8, #207ce5);
+        }
+
+        #nav-bar>div h2 a{
+            text-decoration: none;
+            color: azure;
+            font-size: 28px;
+            font-weight: 700;
+            font-family: "Poppins", sans-serif;
+        }
+
+        #nav-bar>div:nth-child(2){
+            width:50%;
+        }
+
+        #nav-bar #nav-ops{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #nav-bar>div:nth-child(2) a{
+            padding: 5px;
+            margin: 5px;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: "Poppins", sans-serif;
+        }
+
+        #nav-bar>div:nth-child(2) a:hover{
+            color: #ce4be8;
+        }
+
+        #nav-ops div:first-child a{
+            color:#4986fc;
+        }
+
+        #main-box{
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .in-box{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            height: 100%;
+            width: 80%;
+            padding: 100px 10px 10px 10px;
+        }
+
+        #smContent{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: start;
+            justify-content: start;
+            align-content: start;
+            gap: 20px;
+        }
+
+        #smContent h5 {
+            font-size: 13px;
+            color:#4986fc;
+            font-family: "Poppins";
+        }
+
+        #smContent h2 {
+            font-size: 34px;
+            font-family: "Poppins";
+            font-weight: 600;
+        }
+
+        #smContent p {
+            margin-top: 25px;
+            font-size: 20px;
+            font-weight: 400;
+            font-style: italic;
+            font-family: "Poppins";
+            line-height: 1.8;
+            color: #999999;
+        }
+        
+        #img-span{
+            margin: 30px 20px 0px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: center;
+            align-content: center;
+            gap: 35px;
+
+        }
+
+        #img-span img{
+            height: 120px;
+            width: 180px;
+        }
+
+        #img-span span{
+            font-size: 22px;
+            font-family: "Poppins";
+            font-weight: 400;
+            width: 50%;
+        }
+
+        #card{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            align-content: start;
+            gap: 30px;
+        }
+
+        #card div{
+            border-radius: 15px;
+            height: 250px;
+            width: 210px;
+            padding: 20px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+
+        #card div>h3{
+            font-size: 21px;
+            font-family: "poppins";
+            font-weight: 500;
+        }
+
+        #card div>img{
+            height: 30%;
+            width: 35%;
+            margin-bottom: 5px;
+        }
+
+        #card div>p{
+            line-height: 1.5;
+            margin-top: 25px;
+            font-family: "Poppins";
+            font-weight: 400;
+            color: #999999;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav-bar">
+        <div>
+            <h2>
+                <a href="#">StudyLab</a>
+            </h2>
+        </div>
+        <div id="nav-ops">
+            <div>
+                <a href="#">Home</a>
+            </div>
+            <div>
+                <a href="#">About</a>
+            </div>
+            <div>
+                <a href="#">Course</a>
+            </div>
+            <div>
+                <a href="#">Instructor</a>
+            </div>
+            <div>
+                <a href="#">Blog</a>
+            </div>
+            <div>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </div>
+    <div id="main-box">
+        <div class="in-box" id="smContent">
+
+            <h5>
+                WELCOME TO STUDYLAB
+            </h5>
+
+            <h2>
+                We Are StudyLab An Online Learning Center
+            </h2>
+
+            <p>
+                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+            </p>
+
+            <p>
+                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+            </p>
+
+            <div id="img-span">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtZuLYtqv2sloI_s7GUY68K4d_G9zudwhdH0rx8Z_ydWyP4g1w8Q3mYV2ohjwiq6bXaYU&usqp=CAU" alt="">
+
+                <span>
+                    Learn anything from StudyLab, Watch video
+                </span>
+            </div>
+
+        </div>
+
+        <div class="in-box" id="card">
+            
+            <div>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxKHtUpk76RkeHzZtiZ0y3kc7fWgmAHpFxRw&usqp=CAU" alt="">
+                
+                <h3>
+                    Top Quality Content
+                </h3>
+                
+                <p>
+                    A small river named Duden flows by their place and supplies
+                </p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/1048/1048949.png" alt="">
+                
+                <h3>
+                    Highly Skilled Instructor
+                </h3>
+                
+                <p>
+                    A small river named Duden flows by their place and supplies
+                </p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/14985/14985173.png" alt="">
+                
+                <h3>
+                    World Class & Quiz
+                </h3>
+                
+                <p>
+                    A small river named Duden flows by their place and supplies
+                </p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/8044/8044426.png" alt="">
+                
+                <h3>
+                    Get Certified
+                </h3>
+                
+                <p>
+                    A small river named Duden flows by their place and supplies
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

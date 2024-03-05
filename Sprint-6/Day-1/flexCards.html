@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Cards</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: grey;
+        }
+
+        #main-box{
+            border:1px solid black;
+        }
+
+        .inner-box{
+            margin: 10px;
+            padding: 10px;
+
+            /* Flex Parent Properties*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .inner-box>div{
+            border-radius: 5px;
+            padding: 10px;
+            height: 450px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            background-color: white;
+        }
+
+        .inner-box>div img{
+            height: 58%;
+            width: 100%;
+        }
+
+        .inner-box>div p{
+            font-size: 25px;
+            line-height: 24px;
+            font-family: "Rubik", sans-serif;
+            font-weight: 500;
+        }
+
+        .inner-box>div>div{
+            border-left: 4px solid  rgba(236, 40, 40, 0.99);
+            padding: 0px 20px;
+        }
+
+        .inner-box>div>div span{
+            font-family: "Rubik", sans-serif;
+            font-weight: 500;
+            font-size: 17px;
+            color: rgba(1, 1, 1, 0.658);
+        }
+    </style>
+</head>
+<body>
+    <div id="main-box">
+        <div class="inner-box">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb9OHsofRhepTHjzdo5uGHUdXEcIovoHw73g&usqp=CAU" alt="">
+                <p>US and UK forces to strike back in cyber space</p>
+                <br>
+                <div>
+                    <span>TECHNOLOGY</span>
+                </div>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKz1nAcrGk6ty6s6_m8HP_aDlDj-9_PuuaCw&usqp=CAU" alt="">
+                <p>Lady Gaga took personal trauma into Gucci role</p>
+                <br>
+                <div>
+                    <span>ENTERTAINMENT & ARTS</span>
+                </div>      
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0friFiNcfQwcf4XP2jV6_9IH7W2KJipQ3Gg&usqp=CAU" alt="">
+                <p>The mothers using Instagram to offer advice to new mums and dads</p>
+                <br>
+                <div>
+                    <span>BUSINESS</span>
+                </div>    
+            </div>
+        </div>
+        <div class="inner-box">
+            <div>
+                <img src="https://mediaproxy.salon.com/width/1200/https://media2.salon.com/2022/06/jeff-bridges-0616221.jpg" alt="">
+                <p>'I've seen irreversible change but hope too for planet'</p>
+                <br>
+                <div>
+                    <span>SCIENCE & ENVIORNMENT</span>
+                </div>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6FvHhrq-1_K8Yk1qln7S1IC48ZQuY-lVlC9jCVYn0_J2tV7gn1hkiM7N_R2q1ddkRSTs&usqp=CAU" alt="">
+                <p>Full force of Covid hitting germany, warns Merkel</p>
+                <br>
+                <div>
+                    <span>EUROPE</span>
+                </div>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCKmGkixmhEzU_6dqXwNXgC4xyMXMmUkYeUBbJvNcviUh6Jf_6U4jwLnGbrFzSPXbYEME&usqp=CAU" alt="">
+                <p>Baby elephant dies after losing half its trunk</p>
+                <br>
+                <div>
+                    <span>ASIA</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
