@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-5</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #mainBox{
+            margin: 1%;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 200px);
+            grid-template-areas:
+            " . sec sec . "
+            " fst fst . . "
+            " . . ls ls "
+            ;
+            gap: 30px;
+        }
+        
+        #mainBox>div{
+            border-radius: 5px;
+            background-color: rgb(3, 110, 97);
+        }
+
+        #mainBox>#second{
+            grid-area: sec;
+        }
+
+        #mainBox>#first{
+            grid-area: fst;
+        }
+
+        #mainBox>#last{
+            grid-area: ls;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainBox">
+        <div></div>
+        <div id="second"></div>
+        <div></div>
+        <div></div>
+        <div id="first"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div id="last"></div>
+    </div>
+</body>
+</html>
