@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-3</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #main{
+            margin: 10px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 100px repeat(1, 400px);
+            gap: 10px;
+            grid-template-areas: 
+            "nav nav"
+            ". ."
+            ;
+        }
+
+        #main>div{
+            font-size: 30px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+            padding: 10px;
+        }
+
+        #main>div:nth-child(1){
+            background-color: yellow;
+            grid-area: nav;
+        }
+
+        #main>div:nth-child(2){
+            background-color: red;
+        }
+
+        #main>div:nth-child(3){
+            background-color: green;
+        }
+
+        @media all and (min-width: 10px) and (max-width: 750px) {
+            #main{
+                margin: 10px;
+                padding: 10px;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: 100px repeat(2, 400px);
+                gap: 10px;
+                grid-template-areas: 
+                "nav"
+                "."
+                "."
+                ;
+            }
+    
+            #main>div{
+                font-size: 30px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+                padding: 10px;
+            }
+    
+            #main>div:nth-child(1){
+                background-color: yellow;
+                grid-area: nav;
+            }
+    
+            #main>div:nth-child(2){
+                background-color: red;
+            }
+    
+            #main>div:nth-child(3){
+                background-color: green;
+            }
+    
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div>Navigation</div>
+        <div>Left Box</div>
+        <div>Right Box</div>
+    </div>
+</body>
+</html>

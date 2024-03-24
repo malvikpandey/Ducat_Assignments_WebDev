@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tauri&display=swap');
+
+    body{
+      background-color: white;
+    }
+
+    #header{
+      font-family: "Tauri", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      text-align: center;
+    }
+
+    #header>p{
+      margin: 0px 20%;
+    }
+
+    #doctors{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 30px 0;
+    }
+
+    #doctors>div{
+      margin: 10px;
+      height: 440px;
+      text-align: center;
+      font-family: "Tauri", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    #doctors>div div{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 40px;
+    }
+
+    #doctors>div div>button{
+      border: 1px solid red;
+      background-color: rgba(230, 34, 34, 0.407);
+      border-radius: 5px;
+      padding: 7px;
+      color: red;
+      font-family: "Tauri", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    #doctors>div div>button:hover{
+      background-color: rgba(137, 43, 226, 0.41);
+      color: rgb(2, 60, 24);
+      border: 1px solid rgb(2, 60, 24);
+    }
+
+    #doctors>div img{
+      height: 45%;
+      width: 100%;
+    }
+
+    #service{
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    #service>div{
+      height: 220px;
+      margin: 25px;
+      padding: 15px;
+      text-align: center;
+      font-family: "Tauri", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    #service>div img{
+      width: 25%;
+      height: 25%;
+    }
+
+    @media all and (min-width: 450px) and (max-width: 750px) {
+      body{
+        background-color: white;
+      }
+  
+      #header{
+        font-family: "Tauri", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+      }
+  
+      #header>p{
+        margin: 0px 20%;
+      }
+  
+      #doctors{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 30px 0;
+      }
+  
+      #doctors>div{
+        margin: 10px;
+        height: 440px;
+        text-align: center;
+        font-family: "Tauri", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+  
+      #doctors>div div{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 40px;
+      }
+  
+      #doctors>div div>button{
+        border: 1px solid red;
+        background-color: rgba(230, 34, 34, 0.407);
+        border-radius: 5px;
+        padding: 7px;
+        color: red;
+        font-family: "Tauri", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+  
+      #doctors>div div>button:hover{
+        background-color: rgba(137, 43, 226, 0.41);
+        color: rgb(2, 60, 24);
+        border: 1px solid rgb(2, 60, 24);
+      }
+  
+      #doctors>div img{
+        height: 45%;
+        width: 100%;
+      }
+  
+      #service{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+      }
+  
+      #service>div{
+        height: 220px;
+        margin: 25px;
+        padding: 15px;
+        text-align: center;
+        font-family: "Tauri", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+  
+      #service>div img{
+        width: 25%;
+        height: 25%;
+      }
+  
+    }
+
+    @media all and (min-width: 10px) and (max-width: 449px) {
+      body{
+        background-color: white;
+      }
+  
+      #header{
+        font-family: "Tauri", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+      }
+  
+      #header>p{
+        margin: 0px 20%;
+      }
+  
+      #doctors{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 30px 0;
+      }
+  
+      #doctors>div{
+        margin: 10px;
+        height: 440px;
+        text-align: center;
+        font-family: "Tauri", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+  
+      #doctors>div div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 40px;
+      }
+  
+      #doctors>div div>button{
+        border: 1px solid red;
+        background-color: rgba(230, 34, 34, 0.407);
+        border-radius: 5px;
+        padding: 7px;
+        color: red;
+        font-family: "Tauri", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+  
+      #doctors>div div>button:hover{
+        background-color: rgba(137, 43, 226, 0.41);
+        color: rgb(2, 60, 24);
+        border: 1px solid rgb(2, 60, 24);
+      }
+  
+      #doctors>div img{
+        height: 45%;
+        width: 100%;
+      }
+  
+      #service{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+      }
+  
+      #service>div{
+        height: 220px;
+        margin: 25px;
+        padding: 15px;
+        text-align: center;
+        font-family: "Tauri", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+  
+      #service>div img{
+        width: 25%;
+        height: 25%;
+      }
+  
+    }
+  </style>
+
+  <body>
+    <div id="header">
+      <h1>Our Specialist</h1>
+      <p>
+        Green above he cattle god saw day multiply under fill in the cattle fowl
+        a all, living, tree word link available in the service for subdue fruit.
+      </p>
+    </div>
+    <!-- Top-section -->
+    <div id="doctors">
+      <!-- This section should have 4 child divs, each div should have image,h3,h6 and div for buttons -->
+      <div>
+        <img src="https://preview.colorlib.com/theme/medino/assets/images/doctor1.jpg.webp" alt="">
+        <h3>Ethel Davis</h3>
+        <h6>Sr. Faculty Data Science</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iste assumenda eum aliquam, quam nulla?</p>
+        <div>
+          <button>Know More</button>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <div>
+        <img src="https://preview.colorlib.com/theme/medino/assets/images/doctor1.jpg.webp" alt="">
+        <h3>Ethel Davis</h3>
+        <h6>Sr. Faculty Data Science</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iste assumenda eum aliquam, quam nulla?</p>
+        <div>
+          <button>Know More</button>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <div>
+        <img src="https://preview.colorlib.com/theme/medino/assets/images/doctor1.jpg.webp" alt="">
+        <h3>Ethel Davis</h3>
+        <h6>Sr. Faculty Data Science</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iste assumenda eum aliquam, quam nulla?</p>
+        <div>
+          <button>Know More</button>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <div>
+        <img src="https://preview.colorlib.com/theme/medino/assets/images/doctor1.jpg.webp" alt="">
+        <h3>Ethel Davis</h3>
+        <h6>Sr. Faculty Data Science</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iste assumenda eum aliquam, quam nulla?</p>
+        <div>
+          <button>Know More</button>
+          <button>Book Now</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom section  -->
+    <div id="service">
+      <!-- This section should have 6 child divs, each div should have image,h5,p -->
+      <div>
+        <img src="./image.png" alt="">
+        <h5>Teeth Whitening</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, odio.</p>
+      </div>
+      <div>
+        <img src="./image.png" alt="">
+        <h5>Teeth Whitening</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, odio.</p>
+      </div>
+      <div>
+        <img src="./image.png" alt="">
+        <h5>Teeth Whitening</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, odio.</p>
+      </div>
+      <div>
+        <img src="./image.png" alt="">
+        <h5>Teeth Whitening</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, odio.</p>
+      </div>
+      <div>
+        <img src="./image.png" alt="">
+        <h5>Teeth Whitening</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, odio.</p>
+      </div>
+      <div>
+        <img src="./image.png" alt="">
+        <h5>Teeth Whitening</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, odio.</p>
+      </div>
+    </div>
+  </body>
+</html>

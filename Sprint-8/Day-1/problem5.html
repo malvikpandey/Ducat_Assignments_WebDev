@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-5</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        *{
+            margin: 0;
+        }
+
+        #main{
+            margin: 10px;
+            padding: 10px;
+        }
+
+        #main>h1{
+            text-align: center;
+            font-family: "Poppins";
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        #image{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        #grid>div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+
+        #grid>div>img:nth-child(1){
+            height: 65%;
+            width: 100%;
+        }
+
+        #grid>div>img:last-child{
+            height: 25%;
+            width: 55%;
+        }
+
+        #grid>div h3{
+            font-family: "Poppins";
+            font-weight: 600;
+            padding: 10px;
+        }
+
+        #grid>div h5{
+            font-size: 13px;
+            font-family: "Poppins";
+            font-weight: 500;
+            color:rgb(70, 69, 69) ;
+            padding: 10px;
+        }
+
+        @media all and (min-width: 450px) and (max-width: 800px){
+            #main{
+                margin: 10px;
+                padding: 10px;
+            }
+
+            #main>h1{
+                text-align: center;
+                font-family: "Poppins";
+                font-weight: 700;
+                margin-bottom: 25px;
+            }
+    
+            #image{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+                gap: 10px;
+            }
+    
+            #grid{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+                gap: 20px;
+            }
+    
+            #grid>div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            }
+    
+            #grid>div>img:nth-child(1){
+                height: 65%;
+                width: 100%;
+            }
+    
+            #grid>div>img:last-child{
+                height: 25%;
+                width: 55%;
+            }
+    
+            #grid>div h3{
+                font-family: "Poppins";
+                font-weight: 600;
+                padding: 10px;
+            }
+    
+            #grid>div h5{
+                font-size: 13px;
+                font-family: "Poppins";
+                font-weight: 500;
+                color:rgb(70, 69, 69) ;
+                padding: 10px;
+            }
+        }
+
+        @media all and (min-width: 10px) and (max-width: 449px){
+            #main{
+                margin: 10px;
+                padding: 10px;
+            }
+            
+            #main>h1{
+                text-align: center;
+                font-family: "Poppins";
+                font-weight: 700;
+                margin-bottom: 25px;
+            }
+    
+            #image{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+                gap: 10px;
+            }
+    
+            #grid{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(10, 1fr);
+                gap: 20px;
+            }
+    
+            #grid>div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            }
+    
+            #grid>div>img:nth-child(1){
+                height: 65%;
+                width: 100%;
+            }
+    
+            #grid>div>img:last-child{
+                height: 25%;
+                width: 55%;
+            }
+    
+            #grid>div h3{
+                font-family: "Poppins";
+                font-weight: 600;
+                padding: 10px;
+            }
+    
+            #grid>div h5{
+                font-size: 13px;
+                font-family: "Poppins";
+                font-weight: 500;
+                color:rgb(70, 69, 69) ;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>
+            Board Member
+        </h1>
+        <div id="image">
+            <img src="https://www.masaischool.com/images/our-investors/india-q-borderless.svg" alt="">
+        
+            <img src="https://www.masaischool.com/images/our-investors/capria-logo.svg" alt="">
+
+            <img src="https://www.masaischool.com/images/our-investors/omidyar-borderless.svg" alt="">
+        </div>
+
+        <h1>
+            Strategic Investors
+        </h1>
+        <div id="grid">
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg" alt="">
+                <h3>Amrish Rau</h3>
+                <h5>CEO</h5>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png" alt="">
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg" alt="">
+                <h3>Amrish Rau</h3>
+                <h5>CEO</h5>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png" alt="">
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg" alt="">
+                <h3>Amrish Rau</h3>
+                <h5>CEO</h5>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png" alt="">
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg" alt="">
+                <h3>Amrish Rau</h3>
+                <h5>CEO</h5>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png" alt="">
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg" alt="">
+                <h3>Amrish Rau</h3>
+                <h5>CEO</h5>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png" alt="">
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg" alt="">
+                <h3>Amrish Rau</h3>
+                <h5>CEO</h5>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png" alt="">
+            </div>
+
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg" alt="">
+                <h3>Amrish Rau</h3>
+                <h5>CEO</h5>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png" alt="">
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg" alt="">
+                <h3>Amrish Rau</h3>
+                <h5>CEO</h5>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png" alt="">
+            </div>
+
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg" alt="">
+                <h3>Amrish Rau</h3>
+                <h5>CEO</h5>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png" alt="">
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg" alt="">
+                <h3>Amrish Rau</h3>
+                <h5>CEO</h5>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

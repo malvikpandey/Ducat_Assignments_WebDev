@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problem-4</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #main{
+            margin: 10px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px repeat(3, 150px);
+            grid-template-areas: 
+            "nav nav nav"
+            "lf lf rb1"
+            "lf lf rb2"
+            "lf lf rb3"
+            ;
+            gap: 10px;
+        }
+
+        #main>div {
+            padding: 10px;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        #main>div:nth-child(1){
+            margin-bottom: 20px;
+            background-color: yellow;
+            grid-area: nav;
+        }
+
+        #main>div:nth-child(2){
+            background-color: red;
+            grid-area: lf;
+        }
+
+        #main>div:nth-child(3){
+            background-color: green;
+            grid-area: rb1;
+        }
+
+        #main>div:nth-child(4){
+            background-color: green;
+            grid-area: rb2;
+        }
+
+        #main>div:nth-child(5){
+            background-color: green;
+            grid-area: rb3;
+        }
+
+        @media all and (min-width: 593px) and (max-width: 800px){
+            #main{
+                margin: 10px;
+                padding: 10px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 100px repeat(3, 180px);
+                grid-template-areas: 
+                "nav nav nav"
+                "lf lf lf"
+                "lf lf lf"
+                "rb1 rb2 rb3"
+                ;
+                gap: 10px;
+            }
+    
+            #main>div {
+                padding: 10px;
+                font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+            }
+    
+            #main>div:nth-child(1){
+                margin-bottom: 20px;
+                background-color: yellow;
+                grid-area: nav;
+            }
+    
+            #main>div:nth-child(2){
+                background-color: red;
+                grid-area: lf;
+            }
+    
+            #main>div:nth-child(3){
+                background-color: green;
+                grid-area: rb1;
+            }
+    
+            #main>div:nth-child(4){
+                background-color: green;
+                grid-area: rb2;
+            }
+    
+            #main>div:nth-child(5){
+                background-color: green;
+                grid-area: rb3;
+            }
+        }
+
+        @media all and (min-width: 80px) and (max-width: 592px){
+            #main{
+                margin: 10px;
+                padding: 10px;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: 100px repeat(5, 180px);
+                grid-template-areas: 
+                "nav"
+                "lf"
+                "lf"
+                "rb1"
+                "rb2"
+                "rb3"
+                ;
+                gap: 10px;
+            }
+    
+            #main>div {
+                padding: 10px;
+                font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+            }
+    
+            #main>div:nth-child(1){
+                margin-bottom: 20px;
+                background-color: yellow;
+                grid-area: nav;
+            }
+    
+            #main>div:nth-child(2){
+                background-color: red;
+                grid-area: lf;
+            }
+    
+            #main>div:nth-child(3){
+                background-color: green;
+                grid-area: rb1;
+            }
+    
+            #main>div:nth-child(4){
+                background-color: green;
+                grid-area: rb2;
+            }
+    
+            #main>div:nth-child(5){
+                background-color: green;
+                grid-area: rb3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div>Navigation</div>
+        <div>Left Box</div>
+        <div>Right Box 1</div>
+        <div>Right Box 2</div>
+        <div>Right Box 3</div>
+    </div>
+</body>
+</html>
