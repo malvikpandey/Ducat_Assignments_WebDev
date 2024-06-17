@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator</title>
+</head>
+<body>
+    <label for="num1st"></label>
+    <input 
+    type="number"  
+    id="num1"
+    name="num1st"
+    placeholder="Enter 1st number"
+    />
+    
+    <label for="num2nd"></label>
+    <input 
+    type="number"  
+    id="num2"
+    name="num2nd"
+    placeholder="Enter 2nd number"
+    />
+
+    <br><br><br>
+
+    <button type="button" onclick="Add()">Add</button>
+    &nbsp;
+    <button type="button" onclick="Substract()">Substract</button>
+    &nbsp;
+    <button type="button" onclick="Multiply()">Multiply</button>
+    &nbsp;
+    <button type="button" onclick="Divide()">Divide</button>
+
+    <div>
+        <br><br>
+        <h1 style="display: inline">
+            Result : <h1 id="result" style="display: inline"></h1>
+        </h1>
+        
+    </div>
+</body>
+</html>
+
+<script>
+    const num1 = document.getElementsByName('num1st');
+    console.log(num1);
+    const num2 = document.getElementsByName('num2nd');
+    console.log(num2);
+    
+    function Add(){
+        document.getElementById('result').innerText = parseInt(num1[0].value) + parseInt(num2[0].value);
+    }
+    
+    function Divide(){
+        document.getElementById('result').innerHTML = parseInt(num1[0].value) / parseInt(num2[0].value);
+    }
+
+    function Substract(){
+        document.getElementById('result').innerHTML = parseInt(num1[0].value) - parseInt(num2[0].value);
+    }
+
+    function Multiply(){
+        document.getElementById('result').innerHTML = parseInt(num1[0].value) * parseInt(num2[0].value);
+    }
+</script>
