@@ -1,0 +1,117 @@
+<html>
+ <head>
+ <title>Practise Selectors</title>
+ </head>
+ <body>
+ <h1>First H1</h1>
+ <h1>Second H1</h1>
+ <h3>First H3</h3>
+ <h3>Second H3</h3>
+ <h5>First H5</h5>
+ <h5>Second H5</h5>
+ <h5>Third H5</h5>
+ <div class="green">First DIV</div>
+ <div class="red">Second DIV</div>
+ <div class="blue">Third DIV</div>
+ <p class="green">First P</p>
+ <p class="red">Second P</p>
+ <p class="blue">Third P</p>
+ <hr />
+ <button onClick="changeH1()">Change H1</button>
+ <button onClick="changeH3()">Change H3</button>
+ <button onClick="changeH5()">Change H5</button>
+ <button onClick="changeGreen()">Change Green</button>
+ <button onClick="changeRed()">Change Red</button>
+ <button onClick="changeBlue()">Change Blue</button>
+ <script>
+ 
+ var header1 = document.querySelectorAll('h1');
+ var header3 = document.querySelectorAll('h3');
+ var header5 = document.querySelectorAll('h5');
+ var greenClass = document.querySelectorAll('.green');
+ var redClass = document.querySelectorAll('.red');
+ var blueClass = document.querySelectorAll('.blue');
+ 
+ var header1Count = 0;
+ var header3Count = 0;
+ var header5Count = 0;
+ var greenClassCount = 0;
+ var redClassCount = 0;
+ var blueClassCount = 0;
+
+ function changeH1() {
+ // the colour of first <h1> should turn to red
+    if(header1Count == 0){
+        header1[0].style.color = 'red';
+        header1Count = 1;
+    }else{
+        header1[0].style.color = 'black';
+        header1Count = 0;
+    }
+    
+ }
+ function changeH3() {
+ // the colour of all <h3> should turn to green
+    if(header3Count == 0){
+        header3[0].style.color = 'green';
+        header3Count = 1;
+    }else{
+        header3[0].style.color = 'black';
+        header3Count = 0;
+    }
+ }
+ function changeH5() {
+ // the colour of all <h5> should turn to blue
+    if(header5Count == 0){
+        header5[0].style.color = 'blue';
+        header5Count = 1;
+    }else{
+        header5[0].style.color = 'black';
+        header5Count = 0;
+    }
+ }
+ function changeGreen() {
+ // all the elements with the class green should change to green
+    if(greenClassCount == 0){
+        greenClass.forEach(element => {
+            element.style.color = 'green';  
+        });
+        greenClassCount = 1;
+    }else{
+        greenClass.forEach(element => {
+            element.style.color = 'black';  
+        });
+        greenClassCount = 0;
+    }
+ }
+ function changeRed() {
+ // all the elements with the class red should change to red
+    if(redClassCount == 0){
+        redClass.forEach(element => {
+            element.style.color = 'red';  
+        });
+        redClassCount = 1;
+    }else{
+        redClass.forEach(element => {
+            element.style.color = 'black';  
+        });
+        redClassCount = 0;
+    }
+ }
+ function changeBlue() {
+ // all the elements with the class blue should change to blue
+    if(blueClassCount == 0){
+        blueClass.forEach(element => {
+            element.style.color = 'blue';  
+        });
+        blueClassCount = 1;
+    }else{
+        blueClass.forEach(element => {
+            element.style.color = 'black';  
+        });
+        blueClassCount = 0;
+    }
+ }
+ </script>
+ </body>
+</html>

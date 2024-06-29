@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap");
+
+      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+NG+Modern:wght@100..400&display=swap");
+
+      * {
+        margin: 0;
+        font-family: "Lato","Playwrite NG Modern", cursive;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: a;
+      }
+
+      #container {
+        padding: 15px;
+        height: 20vh;
+        margin: 30vh auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      #container > button {
+        width: 10%;
+        height: 50%;
+        border: none;
+        background-color: white;
+        border-radius: 8px;
+        color: white;
+      }
+
+      #container > button:first-child {
+        background-color: rgb(4, 83, 255);
+      }
+
+      #container > button:nth-child(2) {
+        background-color: rgb(155, 155, 156);
+      }
+
+      #container > button:nth-child(3) {
+        background-color: rgb(76, 172, 74);
+      }
+
+      #container > button:nth-child(4) {
+        background-color: rgb(249, 37, 37);
+      }
+
+      #container > button:nth-child(5) {
+        color: black;
+        background-color: rgb(231, 193, 5);
+      }
+
+      #container > button:nth-child(6) {
+        background-color: rgb(20, 193, 181);
+      }
+
+      #container > button:nth-child(7) {
+        color: black;
+      }
+
+      #container > button:nth-child(8) {
+        background-color: rgb(54, 53, 53);
+      }
+
+      #container > button:nth-child(9) {
+        color: rgb(0, 84, 252);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <button>Primary</button>
+      <button>Secondary</button>
+      <button>Success</button>
+      <button>Danger</button>
+      <button>Warning</button>
+      <button>Info</button>
+      <button>Light</button>
+      <button>Dark</button>
+      <button>Link</button>
+    </div>
+  </body>
+</html>

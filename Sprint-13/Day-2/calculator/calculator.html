@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+
+    <h1>
+        Ducat Calculator
+    </h1>
+    
+    <div id="main-box">
+        <div id="input">
+            <h3></h3>
+        </div>
+        <div id="buttons">
+            <div>
+                <button class="white-color" onclick="calculate('1')">1</button>
+                <button onclick="calculate('2')">2</button>
+                <button onclick="calculate('3')">3</button>
+                <button onclick="calculate('+')" class="black-color">+</button>
+            </div>
+            <div>
+                <button onclick="calculate('4')">4</button>
+                <button onclick="calculate('5')">5</button>
+                <button onclick="calculate('6')">6</button>
+                <button onclick="calculate('-')" class="black-color">-</button>
+            </div>
+            <div>
+                <button onclick="calculate('7')">7</button>
+                <button onclick="calculate('8')">8</button>
+                <button onclick="calculate('9')">9</button>
+                <button onclick="calculate('*')" class="black-color">*</button>
+            </div>
+            <div>
+                <button onclick="calculate('C')" class="red-color">C</button>
+                <button onclick="calculate('0')">0</button>
+                <button onclick="calculate('=')" class="black-color">=</button>
+                <button onclick="calculate('/')" class="black-color">/</button>
+            </div>    
+        </div>
+    </div>
+</body>
+
+<script src="./calculator.js"></script>
+</html>
